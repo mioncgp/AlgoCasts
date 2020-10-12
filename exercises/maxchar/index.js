@@ -14,11 +14,15 @@ function maxChar(str) {
       obj[str[i]] = obj[str[i]] + 1;
     }
   }
-  return Object.values(obj).reduce(function (a, b) {
+  const max = Object.values(obj).reduce(function (a, b) {
     return Math.max(a, b);
   });
-}
 
-// console.log(maxChar("lokak 222222222"));
+  for (const [key, value] of Object.entries(obj)) {
+    if (value === max) {
+      return key;
+    }
+  }
+}
 
 module.exports = maxChar;
