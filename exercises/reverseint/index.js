@@ -26,6 +26,6 @@ function reverseInt(n) {
   }
 }
 
-// console.log(reverseInt(1995));
+console.log(reverseInt(90));
 
 module.exports = reverseInt;
