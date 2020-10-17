@@ -13,6 +13,7 @@ function capitalize(str) {
     newStr.push(word[0].toUpperCase() + word.slice(1));
   }
   return newStr.join(" ");
+  //
 }
 
 module.exports = capitalize;
